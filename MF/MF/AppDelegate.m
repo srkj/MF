@@ -16,7 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // 创建window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // app启动后所做的操作
+    [[GlobalApp sharedInstance] handleAfterAppBoot:self.window];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -1,0 +1,62 @@
+//
+//  PrefixHeader.pch
+//  MF
+//
+//  Created by 戴良忠 on 2017/1/18.
+//  Copyright © 2017年 Monster.Z. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MBProgressHUD.h"
+#import "HexColor.h"
+#import "GlobalApp.h"
+#import "Masonry.h"
+
+
+/**系统版本**/
+//系统判定
+#define  IOS_VERSION        [[[UIDevice currentDevice]systemVersion]floatValue]
+#define IS_IOS9 (IOS_VERSION>=9.0)
+#define IS_IOS8 (IOS_VERSION>=8.0)
+#define IS_IOS7 (IOS_VERSION>=7.0)
+
+// 屏幕判定
+#define IS_IPHONE4  ([SDiPhoneVersion deviceSize] == iPhone35inch ? YES : NO)
+#define IS_IPHONE5  ([SDiPhoneVersion deviceSize] == iPhone4inch ? YES : NO)
+#define IS_IPHONE6  ([SDiPhoneVersion deviceSize] == iPhone47inch ? YES : NO)
+#define IS_IPHONE6P ([SDiPhoneVersion deviceSize] == iPhone55inch ? YES : NO)
+
+/**字体**/
+static NSString * const HelveticaNeueFontName = @"HelveticaNeue";
+static NSString * const HelveticaNeueBoldFontName = @"HelveticaNeue-Bold";
+static NSString * const HelveticaNeueThinFontName = @"HelveticaNeue-Thin";
+static NSString * const AvenirNextHeavy = @"AvenirNext-Heavy";
+
+
+/**屏幕**/
+#define ScreenHeight    [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth     [[UIScreen mainScreen] bounds].size.width
+#define Width            self.view.frame.size.width
+#define Height           self.view.frame.size.height
+
+#define StateBarHeight  20
+#define TabBarHeight    49
+#define NavBarHeight    44
+
+#define MainHeight      (ScreenHeight - StateBarHeight)
+#define MainWidth       ScreenWidth
+#define StandardY       (StateBarHeight + NavBarHeight)
+#define NavStatusHeight StandardY
+
+#define ScreenHeightWithoutNavStatusHeight      (ScreenHeight - NavStatusHeight)
+
+//UITableView group样式时,section高度 bug修复
+#define TableViewStyleGroupedSectionHeightFix 0.00001f
+
+
+#endif /* PrefixHeader_pch */
