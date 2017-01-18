@@ -35,6 +35,7 @@
 		6C52737E1E2F3B4B0079A347 /* MFCommunityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52737D1E2F3B4B0079A347 /* MFCommunityVC.m */; };
 		6C5273811E2F3B5C0079A347 /* MFMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5273801E2F3B5C0079A347 /* MFMeVC.m */; };
 		6C5273841E2F3B6D0079A347 /* MFPurposeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5273831E2F3B6D0079A347 /* MFPurposeVC.m */; };
+		6C5273891E2F43EB0079A347 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5273881E2F43EB0079A347 /* NSString+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		6C5273801E2F3B5C0079A347 /* MFMeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMeVC.m; sourceTree = "<group>"; };
 		6C5273821E2F3B6D0079A347 /* MFPurposeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPurposeVC.h; sourceTree = "<group>"; };
 		6C5273831E2F3B6D0079A347 /* MFPurposeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPurposeVC.m; sourceTree = "<group>"; };
+		6C5273871E2F43EB0079A347 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		6C5273881E2F43EB0079A347 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +267,8 @@
 		6C52733E1E2F1BA10079A347 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6C5273871E2F43EB0079A347 /* NSString+Category.h */,
+				6C5273881E2F43EB0079A347 /* NSString+Category.m */,
 				6C5273661E2F27050079A347 /* HexColor.h */,
 				6C5273671E2F27050079A347 /* HexColor.m */,
 			);
@@ -584,6 +589,7 @@
 				6C52737E1E2F3B4B0079A347 /* MFCommunityVC.m in Sources */,
 				6C5273591E2F1BA10079A347 /* GlobalApp.m in Sources */,
 				6C52734F1E2F1BA10079A347 /* MASCompositeConstraint.m in Sources */,
+				6C5273891E2F43EB0079A347 /* NSString+Category.m in Sources */,
 				6C52735A1E2F1BA10079A347 /* UpdateApp.m in Sources */,
 				6C5273551E2F1BA10079A347 /* NSArray+MASAdditions.m in Sources */,
 				6C5273651E2F269D0079A347 /* MBProgressHUD.m in Sources */,

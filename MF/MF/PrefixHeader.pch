@@ -17,6 +17,11 @@
 #import "GlobalApp.h"
 #import "Masonry.h"
 
+/*提示框*/
+#define SHOW_ALERT(msg) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];\
+[alert show];\
+
+
 
 /**系统版本**/
 //系统判定
@@ -54,6 +59,10 @@ static NSString * const AvenirNextHeavy = @"AvenirNext-Heavy";
 #define NavStatusHeight StandardY
 
 #define ScreenHeightWithoutNavStatusHeight      (ScreenHeight - NavStatusHeight)
+
+/*自适应*/
+#define autoWidth(width) width * ScreenWidth / 320
+#define autoHeight(height) height * ScreenSize.height / 568
 
 //UITableView group样式时,section高度 bug修复
 #define TableViewStyleGroupedSectionHeightFix 0.00001f
